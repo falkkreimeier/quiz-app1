@@ -3,6 +3,10 @@
 }
 
 .card__button{
+    margin: 10px;
+    height: 30px;
+    padding: 0px;
+    width: 100px;
     background-color:#F2CB05;
 }
 
