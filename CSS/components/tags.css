@@ -1,0 +1,12 @@
+.tags {
+    display: flex;
+    justify-content: center;
+}
+
+.tags__item {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
