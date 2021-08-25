@@ -2,29 +2,55 @@ html {
     box-sizing: border-box;
 }
 * {
-    box-sizing: inherit;
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
 
+body { 
+    display: grid; 
+    grid-template-rows: 60px auto 60px;
+    height: 100vh;
+    grid-gap: 30px
+}
 main {
-    width: 100%;
+    overflow: scroll;
+    padding: 30px; 
+    display: grid;
+    grid-gap: 24px; 
     /* padding: 20px;
     margin: 20px; */
 }
 
-section {
+header {
+    height: 60px;
+    background-color:  red;
+}
+
+footer {
+    height: 20px;
     border: 1px solid black;
     border-radius: 20px;
-    margin: 20px;
+    margin-top: 0px;
     padding: 20px;
+    background-color: rgb(234, 237, 247);
+}
+
+section { 
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px; 
+    padding: 10px;
+    background-color: rgb(234, 237, 247);
 }
 
 header {
+    height: 20px;
     border: 1px solid black;
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
+    background-color: rgb(234, 237, 247); 
     /* display: flex; 
     justify-content: center;*/
 }
