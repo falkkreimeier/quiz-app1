@@ -47,13 +47,7 @@ section {
     background-color: rgb(234, 237, 247);
 }
 
-/* header { 
-    height: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    /* padding: 20px; 
-    margin: 20px;
-    background-color: rgb(234, 237, 247);*/
-    /* display: flex; 
-    justify-content: center;
+h1 {
+    text-align: center;
 }
+
