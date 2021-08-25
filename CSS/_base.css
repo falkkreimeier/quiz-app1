@@ -12,6 +12,7 @@ body {
     grid-template-rows: 60px auto 60px;
     height: 100vh;
     grid-gap: 10px;
+    background-color: #D9D0C1;
 }
 main {
     overflow: scroll;
@@ -27,7 +28,8 @@ header {
     border-radius: 20px;
     margin: 10px 20px 0px 20px;
     padding: 0px 20px 0px 20px;
-    background-color: rgb(234, 237, 247);
+    background-color:#F2E18D;
+
 }
 
 footer {
@@ -36,7 +38,7 @@ footer {
     border-radius: 20px;
     margin: 0px 20px 10px 20px;
     padding: 10px 20px 10px 20px;
-    background-color: rgb(234, 237, 247);
+    background-color: #F2E18D
 }
 
 section { 
@@ -44,7 +46,8 @@ section {
     border-radius: 20px;
     margin: 10px 20px 10px 20px;
     padding: 10px 20px 10px 20px;
-    background-color: rgb(234, 237, 247);
+    background-color: #F2F2F2;
+}
 }
 
 h1 {
