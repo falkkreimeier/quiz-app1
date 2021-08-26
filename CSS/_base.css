@@ -49,6 +49,7 @@ footer {
 }
 
 section {
+  position: relative;
   min-height: 150px;
   max-height: 150px;
   min-width: 350px;
@@ -81,4 +82,22 @@ section {
 
 h1 {
   text-align: center;
+}
+
+.profile__img {
+  position: absolute;
+  top: 0px;
+  right: 220px;
+  height: 200px;
+} 
+
+ul{
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
 }
