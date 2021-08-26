@@ -1,5 +1,6 @@
 .card {
   max-with: 500px;
+  padding-right: 50px;
 }
 
 .card__hidden {
@@ -83,5 +84,3 @@
   border-radius: 5px;
 }
 
-.card__bookmark {
-}
