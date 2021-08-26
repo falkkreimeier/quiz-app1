@@ -30,7 +30,6 @@ header {
     margin: 10px 20px 0px 20px;
     padding: 0px 20px 0px 20px;
     background-color:#F2E18D;
-
 }
 
 footer {
@@ -50,6 +49,7 @@ section {
     padding: 10px 75px 10px 20px;
     background-color: #F2F2F2;
     position: relative;
+    text-align: center;
 }
 
 h1 {
