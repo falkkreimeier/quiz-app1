@@ -3,7 +3,7 @@
 }
 
 .card__hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .card__button{
@@ -12,6 +12,13 @@
     width: 100px;
     background-color:#F2CB05;
 }
+
+/* .card__button:hover {
+    .card__hidden {
+        visibility: visible;
+    } 
+}*/
+
 
 .bookmark {
     position: absolute;
@@ -29,4 +36,22 @@
     /* border-bottom-color: transparent;  */
     border-radius: 5px;
     /* background-color: transparent; */
+}
+
+.bookmark:hover {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    padding: 0;
+    
+    height: 60px;
+    border-color: #bd291f;
+    border-style: solid;
+    border-width: 20px;
+    border-bottom-color: transparent;
+    border-radius: 5px;
+}
+
+.card__bookmark {
+
 }
