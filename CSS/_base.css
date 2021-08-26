@@ -17,7 +17,8 @@ body {
 main {
     overflow: scroll;
     padding: 0px; 
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     /* grid-gap: 24px;  */
     /* padding: 20px;
     margin: 20px; */
@@ -42,6 +43,7 @@ footer {
 }
 
 section { 
+    max-width: 500px;
     border: 1px solid black;
     border-radius: 20px;
     margin: 10px 20px 10px 20px;
