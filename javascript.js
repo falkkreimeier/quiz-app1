@@ -4,16 +4,28 @@ function docTor(selector) {
 }
 
 function hideAll() {
-  headerHome.classList.add('header--hidden')
-  headerBookmarks.classList.add('header--hidden')
-  headerCreate.classList.add('header--hidden')
-  headerProfile.classList.add('header--hidden')
+  const headerElArr = document.querySelectorAll('header')
 
-  mainHome.classList.add('main--hidden')
-  mainBookmark.classList.add('main--hidden')
-  mainCreate.classList.add('main--hidden')
-  mainProfile.classList.add('main--hidden')
+  headerElArr.forEach((mainEl, index) => {
+    mainEl.classList.add('header--hidden')
+  })
+
+  const mainElArr = document.querySelectorAll('main')
+
+  mainElArr.forEach((mainEl, index) => {
+    mainEl.classList.add('main--hidden')
+  })
 }
+
+//headerHome.classList.add('header--hidden')
+//headerBookmarks.classList.add('header--hidden')
+//headerCreate.classList.add('header--hidden')
+//headerProfile.classList.add('header--hidden')
+
+// mainHome.classList.add('main--hidden')
+// mainBookmark.classList.add('main--hidden')
+// mainCreate.classList.add('main--hidden')
+// mainProfile.classList.add('main--hidden')
 
 // Main and Header Hidden
 
@@ -57,7 +69,16 @@ buttonProfile.addEventListener('click', event => {
 })
 
 // bookmark animation
-const bookmarkClick = document.querySelector('#bookmark--red1')
+
+// function bookmarkClicked() {
+//   const bookmarkElArr = document.querySelectorAll('.bookmark')
+
+//   bookmarkElArr.forEach((bookmarkEl, index) => {
+//     bookmarkEl.classList.toggle('bookmark--red')
+//   })
+// }
+
+const bookmarkClick = document.querySelector('#bookmark--red')
 const bookmarkClick2 = document.querySelector('#bookmark--red2')
 const bookmarkClick3 = document.querySelector('#bookmark--red3')
 const bookmarkClick4 = document.querySelector('#bookmark--red4')
