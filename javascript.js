@@ -1,19 +1,36 @@
+function docTor(selector) {
+  const el = document.querySelector(selector)
+  return el
+}
+
+function hideAll() {
+  headerHome.classList.add('header--hidden')
+  headerBookmarks.classList.add('header--hidden')
+  headerCreate.classList.add('header--hidden')
+  headerProfile.classList.add('header--hidden')
+
+  mainHome.classList.add('main--hidden')
+  mainBookmark.classList.add('main--hidden')
+  mainCreate.classList.add('main--hidden')
+  mainProfile.classList.add('main--hidden')
+}
+
 // Main and Header Hidden
 
-const mainHome = document.querySelector('#home')
-const mainBookmark = document.querySelector('#bookmarks')
-const mainCreate = document.querySelector('#create')
-const mainProfile = document.querySelector('#profile')
+const mainHome = docTor('#home')
+const mainBookmark = docTor('#bookmarks')
+const mainCreate = docTor('#create')
+const mainProfile = docTor('#profile')
 
-const buttonHome = document.querySelector('#buttonHome')
-const buttonBookmarks = document.querySelector('#buttonBookmarks')
-const buttonCreate = document.querySelector('#buttonCreate')
-const buttonProfile = document.querySelector('#buttonProfile')
+const buttonHome = docTor('#buttonHome')
+const buttonBookmarks = docTor('#buttonBookmarks')
+const buttonCreate = docTor('#buttonCreate')
+const buttonProfile = docTor('#buttonProfile')
 
-const headerHome = document.querySelector('#header--home')
-const headerBookmarks = document.querySelector('#header--bookmark')
-const headerCreate = document.querySelector('#header--create')
-const headerProfile = document.querySelector('#header--profile')
+const headerHome = docTor('#header--home')
+const headerBookmarks = docTor('#header--bookmark')
+const headerCreate = docTor('#header--create')
+const headerProfile = docTor('#header--profile')
 
 buttonHome.addEventListener('click', event => {
   mainHome.classList.remove('main--hidden')
@@ -21,7 +38,7 @@ buttonHome.addEventListener('click', event => {
   mainCreate.classList.add('main--hidden')
   mainProfile.classList.add('main--hidden')
 
-  buttonBookmarks.headerHome.classList.remove('header--hidden')
+  headerHome.classList.remove('header--hidden')
   headerBookmarks.classList.add('header--hidden')
   headerCreate.classList.add('header--hidden')
   headerProfile.classList.add('header--hidden')
