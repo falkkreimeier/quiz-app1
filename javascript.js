@@ -33,50 +33,26 @@ const headerCreate = docTor('#header--create')
 const headerProfile = docTor('#header--profile')
 
 buttonHome.addEventListener('click', event => {
+  hideAll()
   mainHome.classList.remove('main--hidden')
-  mainBookmark.classList.add('main--hidden')
-  mainCreate.classList.add('main--hidden')
-  mainProfile.classList.add('main--hidden')
-
   headerHome.classList.remove('header--hidden')
-  headerBookmarks.classList.add('header--hidden')
-  headerCreate.classList.add('header--hidden')
-  headerProfile.classList.add('header--hidden')
 })
 
 buttonBookmarks.addEventListener('click', event => {
-  mainHome.classList.add('main--hidden')
+  hideAll()
   mainBookmark.classList.remove('main--hidden')
-  mainCreate.classList.add('main--hidden')
-  mainProfile.classList.add('main--hidden')
-
-  headerHome.classList.add('header--hidden')
   headerBookmarks.classList.remove('header--hidden')
-  headerCreate.classList.add('header--hidden')
-  headerProfile.classList.add('header--hidden')
 })
 
 buttonCreate.addEventListener('click', event => {
-  mainHome.classList.add('main--hidden')
-  mainBookmark.classList.add('main--hidden')
+  hideAll()
   mainCreate.classList.remove('main--hidden')
-  mainProfile.classList.add('main--hidden')
-
-  headerHome.classList.add('header--hidden')
-  headerBookmarks.classList.add('header--hidden')
   headerCreate.classList.remove('header--hidden')
-  headerProfile.classList.add('header--hidden')
 })
 
 buttonProfile.addEventListener('click', event => {
-  mainHome.classList.add('main--hidden')
-  mainBookmark.classList.add('main--hidden')
-  mainCreate.classList.add('main--hidden')
+  hideAll()
   mainProfile.classList.remove('main--hidden')
-
-  headerHome.classList.add('header--hidden')
-  headerBookmarks.classList.add('header--hidden')
-  headerCreate.classList.add('header--hidden')
   headerProfile.classList.remove('header--hidden')
 })
 
