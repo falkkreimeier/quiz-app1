@@ -1,5 +1,14 @@
 .card {
-  max-with: 500px;
+  max-witdh: 500px;
+  padding-right: 50px;
+}
+
+.card--create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  height: 700px;
   padding-right: 50px;
 }
 
@@ -21,7 +30,7 @@
 }*/
 
 .card__label {
-  max-width: 300px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   align-content: center;
