@@ -29,15 +29,6 @@ main {
     margin: 20px; */
 }
 
-header {
-  width: 400px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 10px 20px 10px 20px;
-  padding: 0px 20px 0px 20px;
-  background-color: #f2d857;
-}
-
 footer {
   width: 400px;
   height: 20px;
@@ -89,15 +80,15 @@ h1 {
   top: 0px;
   right: 220px;
   height: 200px;
-} 
+}
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 li {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
 }

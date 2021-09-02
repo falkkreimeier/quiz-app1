@@ -3,3 +3,31 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
+.footer--hidden {
+  display: none;
+}
+
+#buttonFooterHome {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#buttonFooterBookmarks {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#buttonFooterCreate {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#buttonFooterProfile {
+  padding: 0;
+  border: none;
+  background: none;
+}

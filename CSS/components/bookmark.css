@@ -1,0 +1,25 @@
+.bookmark {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  padding: 0;
+  height: 60px;
+  border-color: navy;
+  border-style: solid;
+  border-width: 20px;
+  border-bottom-color: transparent;
+  border-radius: 5px;
+}
+
+.bookmark--red {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  padding: 0;
+  height: 60px;
+  border-color: red;
+  border-style: solid;
+  border-width: 20px;
+  border-bottom-color: transparent;
+  border-radius: 5px;
+}
