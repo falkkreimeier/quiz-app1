@@ -163,21 +163,29 @@
             <h3>Mach uns schlauer!</h3>
             <button type="submit" class="card__bookmark bookmark"></button>
             
-            <label class="label">
-               Deine Frage: 
+            <form id="createQuestion" class="label card__label">
+                  Deine Frage: 
                 <input class="card__label--question" type="frage" placeholder="Wo kommen die Babys her?">
-            </label>
-        
-            <label class="label">
-                Deine Antwort:
+                  Deine Antwort:
                 <textarea class="card__label--answer" rows:="4" cols="6" placeholder="Das weiß doch jedes Kind. Die bringt der Storch!">
                 </textarea>
-            </label>
-          
-            <label class="label">
-                Deine Tags: 
+                  Deine Tags: 
                 <input class="card__label--tag" type="tag" placeholder="NSFW">
-            </label>
+                <input type="button" onclick="resetForm()" value="Reset form">
+                 <input type="button" onclick="submitForm()" value="Submit form">
+              </form>
+              
+              <script>
+                function resetForm() {
+                  document.getElementById("createQuestion").reset();
+                }
+                function submitForm() {
+                  document.getElementById("createQuestion").submit();
+                }
+              </script>
+        
+       
+        
         </section>
 
     </main>
