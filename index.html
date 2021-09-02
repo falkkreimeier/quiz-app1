@@ -172,11 +172,15 @@
                   Deine Tags: 
                 <input class="card__label--tag" type="tag" placeholder="NSFW">
                 <input type="button" onclick="resetForm()" value="Reset form">
+                 <input type="button" onclick="submitForm()" value="Submit form">
               </form>
               
               <script>
                 function resetForm() {
                   document.getElementById("createQuestion").reset();
+                }
+                function submitForm() {
+                  document.getElementById("createQuestion").submit();
                 }
               </script>
         
