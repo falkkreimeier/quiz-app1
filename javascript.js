@@ -84,19 +84,19 @@ const bookmarkClick3 = document.querySelector('#bookmark--red3')
 const bookmarkClick4 = document.querySelector('#bookmark--red4')
 
 bookmarkClick.addEventListener('click', event => {
-  bookmarkClick.classList.toggle('bookmark--red')
+  bookmarkClick.classList.toggle('bookmark--active')
 })
 
 bookmarkClick2.addEventListener('click', event => {
-  bookmarkClick2.classList.toggle('bookmark--red')
+  bookmarkClick2.classList.toggle('bookmark--active')
 })
 
 bookmarkClick3.addEventListener('click', event => {
-  bookmarkClick3.classList.toggle('bookmark--red')
+  bookmarkClick3.classList.toggle('bookmark--active')
 })
 
 bookmarkClick4.addEventListener('click', event => {
-  bookmarkClick4.classList.toggle('bookmark--red')
+  bookmarkClick4.classList.toggle('bookmark--active')
 })
 
 // Answer buttons

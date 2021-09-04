@@ -28,7 +28,7 @@
     
 
     <main class="main" id="home">
-      <section class="card" >
+      <section class="card main__card--styling" >
         <button id="bookmark--red" type="submit" class="bookmark" alt="bookmark"></button>
         <h2 class="card__question">
           Warum sind Eichhörnchen eigentlich gar nicht so süß?
@@ -44,7 +44,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card main__card--styling">
         <button id="bookmark--red2" type="submit" class="bookmark" alt="bookmark"></button>
         <h2 class="card__question">Wo kommen die Babys her?</h2>
         <button id="answer--button2" class="card__button">Show answer</button>
@@ -61,7 +61,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card main__card--styling">
         <button id="bookmark--red3" type="submit" class="bookmark" alt="bookmark"></button>
         <h2 class="card__question">What is BEM?</h2>
         <button id="answer--button3" class="card__button">Show answer</button>
@@ -78,7 +78,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card main__card--styling">
         <button  id="bookmark--red4"  type="submit" class="bookmark" alt="bookmark"></button>
         <h2 class="card__question">What is BEM?</h2>
         <button id="answer--button4" class="card__button">Show answer</button>
@@ -98,11 +98,11 @@
 
     <main class="main main--hidden" id="bookmarks">
 
-        <section class="card">
-            <button  type="submit" class="card__bookmark bookmark--red" alt="bookmark"></button>
+        <section class="main__card--styling">
+            <button  type="submit" class="bookmark bookmark--active" alt="bookmark"></button>
             <h2 Class="card__question">Warum sind Eichhörnchen eigentlich gar nicht so süß?</h2>
             <button type="submit" class="card__button">Show answer</button>
-            <p class="card__answer card__hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+            <p class="card__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
                 nesciunt fugit nulla, delectus reprehenderit cupiditate ipsa architecto inventore aliquid. Quis nam beatae voluptate distinctio, ipsam
                 sequi. Aliquid soluta deserunt dicta.</p>
             <ul class="tags">
@@ -112,11 +112,11 @@
             </ul>
         </section>
 
-        <section class="card">
-            <button class="bookmark2 card__bookmark bookmark--red" alt="bookmark"></button>
+        <section class="main__card--styling">
+            <button class="bookmark2 card__bookmark bookmark--active" alt="bookmark"></button>
             <h2 Class="card__question">Wo kommen die Babys her?</h2>
             <button class="card__button">Show answer</button>
-            <p class="card__answer card__hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+            <p class="card__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
                 nesciunt fugit nulla, delectus reprehenderit cupiditate ipsa architecto inventore aliquid. Quis nam beatae voluptate distinctio, ipsam
                 sequi. Aliquid soluta deserunt dicta.</p>
             <ul class="tags">
@@ -126,11 +126,11 @@
             </ul>
         </section>
 
-        <section class="card">
-            <button class="bookmark3 card__bookmark bookmark--red"  alt="bookmark "></button>
+        <section class="main__card--styling">
+            <button class="bookmark3 card__bookmark bookmark--active"  alt="bookmark "></button>
             <h2 Class="card__question">What is BEM?</h2>
             <button class="card__button">Show answer</button>
-            <p class="card__answer card__hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+            <p class="card__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
                 nesciunt fugit nulla, delectus reprehenderit cupiditate ipsa architecto inventore aliquid. Quis nam beatae voluptate distinctio, ipsam
                 sequi. Aliquid soluta deserunt dicta.</p>
             <ul class="tags">
@@ -140,11 +140,11 @@
             </ul>
         </section>
         
-        <section class="card">
-            <button class="card__bookmark bookmark--red" alt="bookmark"></button>
+        <section class="main__card--styling">
+            <button class="card__bookmark bookmark--active" alt="bookmark"></button>
             <h2 Class="card__question">What is BEM?</h2>
             <button class="card__button">Show answer</button>
-            <p class="card__answer card__hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+            <p class="card__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
                 nesciunt fugit nulla, delectus reprehenderit cupiditate ipsa architecto inventore aliquid. Quis nam beatae voluptate distinctio, ipsam
                 sequi. Aliquid soluta deserunt dicta.</p>
             <ul class="tags">
@@ -159,20 +159,22 @@
       </main>
 
     <main class="main main--hidden" id="create">
-        <section class="label card__label">
+        <section class="main__card--styling create__card--style">
             <h3>Mach uns schlauer!</h3>
-            <button type="submit" class="card__bookmark bookmark"></button>
+            <button type="submit" class="bookmark"></button>
             
-            <form id="createQuestion" class="label card__label">
-                  Deine Frage: 
-                <input class="card__label--question" type="frage" placeholder="Wo kommen die Babys her?">
-                  Deine Antwort:
-                <textarea class="card__label--answer" rows:="4" cols="6" placeholder="Das weiß doch jedes Kind. Die bringt der Storch!">
-                </textarea>
-                  Deine Tags: 
-                <input class="card__label--tag" type="tag" placeholder="NSFW">
+            <form id="createQuestion" class="create__card--style">
+                 <p>Deine Frage:</p>
+                <input class="create__card--question" type="frage" placeholder="Wo kommen die Babys her?"> 
+                 <p>Deine Antwort:</p> 
+                <textarea class="create__card--answer" rows:="4" cols="6" placeholder="Das weiß doch jedes Kind. Die bringt der Storch!">
+                </textarea> 
+                   <p>Deine Tags:</p> 
+                <input class="create__card--tag" type="tag" placeholder="NSFW"> 
+                <br>
                 <input type="button" onclick="resetForm()" value="Reset form">
-                 <input type="button" onclick="submitForm()" value="Submit form">
+                <input type="button" onclick="submitForm()" value="Submit form">
+          
               </form>
               
               <script>
@@ -191,7 +193,7 @@
     </main>
 
     <main class="main main--hidden" id="profile">
-        <section>
+        <section class="main__card--styling">
             <img class="profile__img" img src="img/Profilbild.png" alt="Profilbild">
             <ul>
                 <li>Name</li>
@@ -203,10 +205,10 @@
 
     <footer>
       <nav id="footerHome" class="footer__nav button">
-        <button id="buttonHome"><img src="img/home_white_24dp_white.svg" alt="Home"/></button>
-        <button id="buttonBookmarks"><img id="buttonBookmark__img" src="img/bookmarks_black_24dp.svg" alt="Bookmark"/></button> 
-        <button id="buttonCreate"><img src="img/create_black_24dp.svg" alt="Create"/></button>
-        <button id="buttonProfile"><img src="img/account_circle_black_24dp.svg" alt="Profile"/></button>
+        <button class="footer__button--home" id="buttonHome"><img src="img/home_white_24dp_white.svg" alt="Home"/></button>
+        <button class="footer__button--bookmarks"  id="buttonBookmarks"><img id="buttonBookmark__img" src="img/bookmarks_black_24dp.svg" alt="Bookmark"/></button> 
+        <button class="footer__button--create" id="buttonCreate"><img src="img/create_black_24dp.svg" alt="Create"/></button>
+        <button class="footer__button--profile" id="buttonProfile"><img src="img/account_circle_black_24dp.svg" alt="Profile"/></button>
       </nav>
     </footer>
     <script src="javascript.js" defer></script>

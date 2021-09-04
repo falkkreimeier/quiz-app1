@@ -7,3 +7,21 @@ main {
 .main.main--hidden {
   display: none;
 }
+
+.main__card--styling {
+  position: relative;
+  min-height: 100px;
+  max-height: 250px;
+  min-width: 350px;
+  max-width: 350px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 40px;
+  background-color: #f2f2f2;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+  flex-direction: column;
+  padding-right: 50px;
+}
