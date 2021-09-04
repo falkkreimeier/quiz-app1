@@ -78,10 +78,10 @@ buttonProfile.addEventListener('click', event => {
 //   })
 // }
 
-const bookmarkClick = document.querySelector('#bookmark--red')
-const bookmarkClick2 = document.querySelector('#bookmark--red2')
-const bookmarkClick3 = document.querySelector('#bookmark--red3')
-const bookmarkClick4 = document.querySelector('#bookmark--red4')
+const bookmarkClick = docTor('#bookmark--red')
+const bookmarkClick2 = docTor('#bookmark--red2')
+const bookmarkClick3 = docTor('#bookmark--red3')
+const bookmarkClick4 = docTor('#bookmark--red4')
 
 bookmarkClick.addEventListener('click', event => {
   bookmarkClick.classList.toggle('bookmark--active')
@@ -100,17 +100,17 @@ bookmarkClick4.addEventListener('click', event => {
 })
 
 // Answer buttons
-const showText1 = document.querySelector('#answer--text1')
-const showButton1 = document.querySelector('#answer--button1')
+const showText1 = docTor('#answer--text1')
+const showButton1 = docTor('#answer--button1')
 
-const showText2 = document.querySelector('#answer--text2')
-const showButton2 = document.querySelector('#answer--button2')
+const showText2 = docTor('#answer--text2')
+const showButton2 = docTor('#answer--button2')
 
-const showText3 = document.querySelector('#answer--text3')
-const showButton3 = document.querySelector('#answer--button3')
+const showText3 = docTor('#answer--text3')
+const showButton3 = docTor('#answer--button3')
 
-const showText4 = document.querySelector('#answer--text4')
-const showButton4 = document.querySelector('#answer--button4')
+const showText4 = docTor('#answer--text4')
+const showButton4 = docTor('#answer--button4')
 
 showButton1.addEventListener('click', event => {
   showText1.classList.toggle('card__hidden')
@@ -141,10 +141,10 @@ function darkMode() {
     headerDarkEl.classList.toggle('header__dark')
   })
 
-  const footerDark = document.querySelector('.footer__style')
+  const footerDark = docTor('.footer__style')
   footerDark.classList.toggle('footer__dark')
 
-  const bodyDark = document.querySelector('body')
+  const bodyDark = docTor('body')
   bodyDark.classList.toggle('body__dark')
 
   const mainDark = document.querySelectorAll('.main__card--styling')
