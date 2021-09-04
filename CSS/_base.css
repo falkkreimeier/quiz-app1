@@ -15,47 +15,8 @@ body {
   background-color: #d9d0c1;
 }
 
-section {
-  position: relative;
-  min-height: 100px;
-  max-height: 250px;
-  min-width: 350px;
-  max-width: 350px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 10px;
-  padding: 40px;
-  /* margin: 10px 20px 10px 20px; */
-  /* padding: 10px 75px 10px 20px; */
-  background-color: #f2f2f2;
-  position: relative;
-  text-align: center;
-  flex-direction: column;
-}
-
-/* form {
-  min-height: 220px;
-  max-height: 220px;
-  min-width: 350px;
-  max-width: 350px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 10px 20px 10px 20px;
-  padding: 10px 75px 10px 20px;
-  background-color: #f2f2f2;
-  position: relative;
-  text-align: center;
-} */
-
 h1 {
   text-align: center;
-}
-
-.profile__img {
-  position: absolute;
-  top: 0px;
-  right: 220px;
-  height: 200px;
 }
 
 ul {
@@ -67,4 +28,8 @@ li {
   flex-direction: column;
   justify-content: right;
   align-items: flex-end;
+}
+
+p {
+  padding: 5px;
 }

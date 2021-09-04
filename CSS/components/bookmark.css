@@ -11,7 +11,7 @@
   border-radius: 5px;
 }
 
-.bookmark--red {
+.bookmark--active {
   position: absolute;
   top: 0px;
   right: 40px;

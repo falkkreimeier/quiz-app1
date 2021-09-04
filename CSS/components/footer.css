@@ -18,25 +18,25 @@ footer {
   display: none;
 }
 
-#buttonFooterHome {
+.footer__button--home {
   padding: 0;
   border: none;
   background: none;
 }
 
-#buttonFooterBookmarks {
+.footer__button--bookmarks {
   padding: 0;
   border: none;
   background: none;
 }
 
-#buttonFooterCreate {
+.footer__button--create {
   padding: 0;
   border: none;
   background: none;
 }
 
-#buttonFooterProfile {
+.footer__button--profile {
   padding: 0;
   border: none;
   background: none;
