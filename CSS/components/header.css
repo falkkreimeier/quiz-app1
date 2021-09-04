@@ -1,10 +1,20 @@
 .header__style {
+  position: relative;
   width: 400px;
   border: 1px solid black;
   border-radius: 20px;
   margin: 10px 20px 10px 20px;
   padding: 0px 20px 0px 20px;
   background-color: #f2d857;
+}
+
+.header__dark {
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px 20px 10px 20px;
+  padding: 0px 20px 0px 20px;
+  background-color: #6a736f;
 }
 
 .header--hidden {
@@ -17,5 +27,5 @@
   border-radius: 20px;
   margin: 10px 20px 10px 20px;
   padding: 0px 20px 0px 20px;
-  background-color: #f2d857;
+  background-color: #6a736f;
 }

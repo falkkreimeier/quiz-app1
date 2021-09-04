@@ -127,3 +127,29 @@ showButton3.addEventListener('click', event => {
 showButton4.addEventListener('click', event => {
   showText4.classList.toggle('card__hidden')
 })
+
+// Darkmode
+// const buttonDark = document.querySelector('.button__dark')
+// const headerDark = document.querySelectorAll('header__style')
+// const mainDark = document.querySelectorAll('main__card--styling')
+// const footerDark = document.querySelectorAll('footer__style')
+
+function darkMode() {
+  const headerDark = document.querySelectorAll('.header__style')
+
+  headerDark.forEach((headerDarkEl, index) => {
+    headerDarkEl.classList.toggle('header__dark')
+  })
+
+  const footerDark = document.querySelector('.footer__style')
+  footerDark.classList.toggle('footer__dark')
+
+  const bodyDark = document.querySelector('body')
+  bodyDark.classList.toggle('body__dark')
+
+  const mainDark = document.querySelectorAll('.main__card--styling')
+
+  mainDark.forEach((mainDarkEle, index) => {
+    mainDarkEle.classList.toggle('main__card--dark')
+  })
+}
