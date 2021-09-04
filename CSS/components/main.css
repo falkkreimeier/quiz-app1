@@ -25,3 +25,21 @@ main {
   flex-direction: column;
   padding-right: 50px;
 }
+
+.main__card--stylingDark {
+  position: relative;
+  min-height: 100px;
+  max-height: 250px;
+  min-width: 350px;
+  max-width: 350px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 40px;
+  background-color: #313b2f;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+  flex-direction: column;
+  padding-right: 50px;
+}
