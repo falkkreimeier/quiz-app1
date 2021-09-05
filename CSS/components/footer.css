@@ -5,7 +5,7 @@
   border-radius: 20px;
   margin: 0px 20px 10px 20px;
   padding: 10px 20px 10px 20px;
-  background-color: #f2d857;
+  background-color: var(--footer-color);
 }
 
 .footer__dark {
@@ -15,7 +15,7 @@
   border-radius: 20px;
   margin: 0px 20px 10px 20px;
   padding: 10px 20px 10px 20px;
-  background-color: #6a736f;
+  background-color: var(--footer-color-dark);
 }
 
 .footer__nav {
@@ -28,25 +28,7 @@
   display: none;
 }
 
-.footer__button--home {
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-.footer__button--bookmarks {
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-.footer__button--create {
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-.footer__button--profile {
+.footer__button {
   padding: 0;
   border: none;
   background: none;

@@ -7,7 +7,7 @@
 
 .create__card--question {
   margin: 4px;
-  width: 180px;
+  width: 250px;
   text-align: center;
 }
 
@@ -30,5 +30,5 @@
   border-radius: 20px;
   padding: 5px;
   margin: 5px;
-  background-color: #d9d0c1;
+  background-color: var(--button-color);
 }

@@ -3,14 +3,19 @@ function docTor(selector) {
   return el
 }
 
+function docTorAll(selector) {
+  const ela = document.querySelectorAll(selector)
+  return ela
+}
+
 function hideAll() {
-  const headerElArr = document.querySelectorAll('header')
+  const headerElArr = docTorAll('header')
 
   headerElArr.forEach((mainEl, index) => {
     mainEl.classList.add('header--hidden')
   })
 
-  const mainElArr = document.querySelectorAll('main')
+  const mainElArr = docTorAll('main')
 
   mainElArr.forEach((mainEl, index) => {
     mainEl.classList.add('main--hidden')
@@ -135,7 +140,7 @@ showButton4.addEventListener('click', event => {
 // const footerDark = document.querySelectorAll('footer__style')
 
 function darkMode() {
-  const headerDark = document.querySelectorAll('.header__style')
+  const headerDark = docTorAll('.header__style')
 
   headerDark.forEach((headerDarkEl, index) => {
     headerDarkEl.classList.toggle('header__dark')
@@ -147,7 +152,7 @@ function darkMode() {
   const bodyDark = docTor('body')
   bodyDark.classList.toggle('body__dark')
 
-  const mainDark = document.querySelectorAll('.main__card--styling')
+  const mainDark = docTorAll('.main__card--styling')
 
   mainDark.forEach((mainDarkEle, index) => {
     mainDarkEle.classList.toggle('main__card--dark')

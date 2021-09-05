@@ -1,8 +1,3 @@
-/* .card {
-  max-witdh: 500px;
-  padding-right: 50px;
-} */
-
 .card--create {
   display: flex;
   flex-direction: column;
@@ -20,7 +15,7 @@
   margin: 10px;
   height: 30px;
   width: 100px;
-  background-color: #f2cb05;
+  background-color: var(--answer-color);
 }
 
 /* .card__button:hover {
@@ -28,7 +23,3 @@
         visibility: visible;
     } 
 }*/
-
-.card__label--red {
-  color: red;
-}

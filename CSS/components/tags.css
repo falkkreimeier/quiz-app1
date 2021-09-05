@@ -1,14 +1,15 @@
 .tags {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .tags__item {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
-    background-color: #D9D0C1;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  background-color: var(--tag-color);
 }
