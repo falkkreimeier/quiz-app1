@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  grid-template-rows: 60px auto 60px;
+  height: 100vh;
+  grid-gap: 10px;
+  background-color: var(--body-color);
+}
+
+.body__dark {
+  display: grid;
+  grid-template-rows: 60px auto 60px;
+  height: 100vh;
+  grid-gap: 10px;
+  background-color: var(--body-color-dark);
+}
