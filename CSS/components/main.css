@@ -25,6 +25,7 @@ main {
 }
 
 .main__card--dark {
+  color: white;
   position: relative;
   min-height: 100px;
   max-height: 250px;
