@@ -146,6 +146,12 @@ function darkMode() {
     headerDarkEl.classList.toggle('header__dark')
   })
 
+  const bookMarkDark = docTorAll('.bookmark--dark')
+
+  bookMarkDark.forEach((bookMarkDarkEl, index) => {
+    bookMarkDarkEl.classList.toggle('bookmark--dark--active')
+  })
+
   const footerDark = docTor('.footer__style')
   footerDark.classList.toggle('footer__dark')
 

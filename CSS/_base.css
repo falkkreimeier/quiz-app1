@@ -3,7 +3,6 @@
   --main-color: #a0d9d9;
   --header-color: #d9b166;
   --footer-color: #d9b166;
-  /* --card-color: #F28705; */
   --tag-color: #a62d2d;
   --answer-color: #d9b166;
   --bookmark-color: #a62d2d;
@@ -14,10 +13,10 @@
   --main__color-dark: #858377;
   --header-color-dark: #e8e8db;
   --footer-color-dark: #e8e8db;
-  /* --card-color-dark:  */
-  --button-color-dark: #ffdf65;
   --answer-color-dark: #ffdf65;
   --bookmark-color-dark: #ffdf65;
+  --bookmark-color-dark-active: ;
+  --tag-color: ;
 }
 
 html {
