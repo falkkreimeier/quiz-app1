@@ -33,7 +33,7 @@
   border-color: var(--bookmark-color);
   border-style: solid;
   border-width: 20px;
-  border-bottom-color: var(--main-color);
+  border-bottom-color: var(--main__color-dark);
   border-radius: 5px;
 }
 
@@ -46,6 +46,6 @@
   border-color: var(--bookmark-color-active);
   border-style: solid;
   border-width: 20px;
-  border-bottom-color: var(--main-color);
+  border-bottom-color: var(--main__color-dark);
   border-radius: 5px;
 }
