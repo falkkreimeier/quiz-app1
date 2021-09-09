@@ -48,6 +48,9 @@ function renderCard(cardData, targetElement) {
 
   const cardBookmark = document.createElement('button')
   cardBookmark.classList.add('bookmark')
+  if (appData.isBookmarked == true) {
+    cardBookmark.classList.add('bookmark--active')
+  }
   cardSection.appendChild(cardBookmark)
 
   const cardQuestion = document.createElement('h2')
@@ -76,10 +79,6 @@ function renderCard(cardData, targetElement) {
     cardTag.textContent = tag
     cardSection.appendChild(cardTag)
   })
-
-  //   bookmark.forEach(bookmarkActive => {
-  //     bookmarkActive.classList.add('bookmark--active')
-  //   })
 }
 
 // Funktion ruft alle renderCard Elemente auf
@@ -141,6 +140,13 @@ function hideAll() {
 buttonHome.addEventListener('click', event => {
   hideAll()
   renderHomepage()
+  const buttonBookmarkActivate = docTorAll('.bookmark')
+  buttonBookmarkActivate.forEach(activate => {
+    activate.addEventListener('click', event => {
+      activate.classList.toggle('bookmark--active')
+    })
+  })
+
   mainHome.classList.remove('main--hidden')
   headerHome.classList.remove('header--hidden')
 })
@@ -174,22 +180,20 @@ buttonBookmarkActivate.forEach(activate => {
   })
 })
 
-// const bookmarkClick2 = docTor('.bookmark')
-// const bookmarkClick3 = docTor('.bookmark')
-// const bookmarkClick4 = docTor('.bookmark')
+function resetForm() {
+  document.getElementById('createQuestion').reset()
+}
 
-// bookmarkClick.addEventListener('click', event => {
-//   bookmarkClick.classList.toggle('bookmark--active')
-// })
+//Add Question Function
+function submitForm(addCart) {
+  document.getElementById('createQuestion').submit()
 
-// bookmarkClick2.addEventListener('click', event => {
-//   bookmarkClick2.classList.toggle('bookmark--active')
-// })
-
-// bookmarkClick3.addEventListener('click', event => {
-//   bookmarkClick3.classList.toggle('bookmark--active')
-// })
-
-// bookmarkClick4.addEventListener('click', event => {
-//   bookmarkClick4.classList.toggle('bookmark--active')
-// })
+  const newObject = {
+    question: getElementByClassName('create__card--question')[0].value,
+    answer: getElementByClassName('create__card--answer')[0].value,
+    isBookmarked: false,
+    showAnswer: false,
+    // tags: ['.value', '.value', '.value'],
+  }
+  appData.push(newObject)
+}
