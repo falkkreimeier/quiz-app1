@@ -9,27 +9,33 @@
   </head>
 
   <body>
-
-  <header class="header__style" id="header--home">
-    <h1>Das große Quiz</h1>
-    <button onclick="darkMode()" type="submit" class="button__dark">Darkmode</button>
-  </header>
-
-  <header class="header__style header--hidden" id="header--bookmark">
-    <h1>Deine Bookmarks</h1>
-    <button onclick="darkMode()" type="submit" class="button__dark">Darkmode</button>
-  </header>
-
-  <header class="header__style header--hidden"  id="header--create">
-    <h1>Deine Fragen</h1>
-    <button onclick="darkMode()" type="submit" class="button__dark">Darkmode</button>
+    <header class="header__style" id="header--home">
+      <h1>Das große Quiz</h1>
+      <button onclick="darkMode()" type="submit" class="button__dark">
+        Darkmode
+      </button>
     </header>
 
-  <header class="header__style header--hidden" id="header--profile">
-    <h1>Dein Profil</h1>
-    <button onclick="darkMode()" type="submit" class="button__dark">Darkmode</button>
-  </header>
-    
+    <header class="header__style header--hidden" id="header--bookmark">
+      <h1>Deine Bookmarks</h1>
+      <button onclick="darkMode()" type="submit" class="button__dark">
+        Darkmode
+      </button>
+    </header>
+
+    <header class="header__style header--hidden" id="header--create">
+      <h1>Deine Fragen</h1>
+      <button onclick="darkMode()" type="submit" class="button__dark">
+        Darkmode
+      </button>
+    </header>
+
+    <header class="header__style header--hidden" id="header--profile">
+      <h1>Dein Profil</h1>
+      <button onclick="darkMode()" type="submit" class="button__dark">
+        Darkmode
+      </button>
+    </header>
 
     <main class="main" id="home">
       <!-- <section class="card main__card--styling" >
@@ -98,11 +104,10 @@
           <li class="tags__item">Structure</li>
         </ul>
       </section>-->
-    </main> 
+    </main>
 
     <main class="main main--hidden" id="bookmarks">
-
-        <section class="main__card--styling">
+      <!-- <section class="main__card--styling">
             <button  type="submit" class="bookmark bookmark--active" alt="bookmark"></button>
             <h2 Class="card__question">Warum sind Eichhörnchen eigentlich gar nicht so süß?</h2>
             <button type="submit" class="card__button">Show answer</button>
@@ -158,12 +163,11 @@
             </ul>
         </section>
     
-      
-      
-      </main>
+       -->
+    </main>
 
     <main class="main main--hidden" id="create">
-        <section class="main__card--styling create__card--style">
+      <section class="main__card--styling create__card--style">
             <h3>Mach andere schlau!</h3>
             <button type="submit" class="bookmark"></button>
             
@@ -189,32 +193,45 @@
                   document.getElementById("createQuestion").submit();
                 }
               </script>
-        
-       
-        
-        </section>
-
+        </section> 
     </main>
 
     <main class="main main--hidden" id="profile">
-        <section class="main__card--styling">
-            <img class="profile__img" img src="img/Profilbild.png" alt="Profilbild">
-            <ul>
-                <li>Name</li>
-                <li>Adresse</li>
-                <li>Tel: 0123-4567890</li>
-            </ul>
-        </section>
+      <section class="main__card--styling">
+        <img
+          class="profile__img"
+          img
+          src="img/Profilbild.png"
+          alt="Profilbild"
+        />
+        <ul>
+          <li>Name</li>
+          <li>Adresse</li>
+          <li>Tel: 0123-4567890</li>
+        </ul>
+      </section>
     </main>
 
     <footer>
       <nav id="footerHome" class="footer__style footer__nav button">
-        <button class="footer__button" id="buttonHome"><img src="img/home_white_24dp_white.svg" alt="Home"/></button>
-        <button class="footer__button"  id="buttonBookmarks"><img id="buttonBookmark__img" src="img/bookmarks_black_24dp.svg" alt="Bookmark"/></button> 
-        <button class="footer__button" id="buttonCreate"><img src="img/create_black_24dp.svg" alt="Create"/></button>
-        <button class="footer__button" id="buttonProfile"><img src="img/account_circle_black_24dp.svg" alt="Profile"/></button>
+        <button class="footer__button" id="buttonHome">
+          <img src="img/home_white_24dp_white.svg" alt="Home" />
+        </button>
+        <button class="footer__button" id="buttonBookmarks">
+          <img
+            id="buttonBookmark__img"
+            src="img/bookmarks_black_24dp.svg"
+            alt="Bookmark"
+          />
+        </button>
+        <button class="footer__button" id="buttonCreate">
+          <img src="img/create_black_24dp.svg" alt="Create" />
+        </button>
+        <button class="footer__button" id="buttonProfile">
+          <img src="img/account_circle_black_24dp.svg" alt="Profile" />
+        </button>
       </nav>
     </footer>
-    <script src="javastructure.js" defer></script>
+    <script src="renderCards.js" defer></script>
   </body>
 </html>
