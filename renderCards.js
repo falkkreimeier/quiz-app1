@@ -186,14 +186,15 @@ function resetForm() {
 
 //Add Question Function
 function submitForm(addCart) {
-  document.getElementById('createQuestion').submit()
-
+  // document.getElementById('createQuestion').submit()
+  console.log(document.getElementById('input__answer').value)
   const newObject = {
-    question: getElementByClassName('create__card--question')[0].value,
-    answer: getElementByClassName('create__card--answer')[0].value,
+    question: document.getElementById('input__question').value,
+    answer: document.getElementById('input__answer').value,
     isBookmarked: false,
     showAnswer: false,
     // tags: ['.value', '.value', '.value'],
   }
   appData.push(newObject)
+  console.table(appData)
 }
